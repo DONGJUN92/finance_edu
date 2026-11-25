@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>모두의 예산실장 — 단계별 체감형 나라살림 학습 웹앱</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-font="normal">
+  <!-- 상단 헤더 -->
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="brand-area" id="btn-go-start" title="코스 선택 화면으로 돌아가기">
+        <span class="brand-pill">체감형 재정교육</span>
+        <span class="brand-name">모두의 예산실장</span>
+      </div>
+      <div class="header-controls">
+        <span class="track-indicator" id="hdr-track-label">실전 코스 (청소년·청년·시민)</span>
+        <button class="btn-ghost" id="btn-font-scale">큰 글씨 모드</button>
+        <button class="btn-ghost" id="btn-reset-course">코스 변경</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 6단계 다층 학습 진행률 바 (한 화면 = 1개의 핵심 원리) -->
+  <nav class="stepper-bar" id="stepper-bar" style="display:none;" aria-label="학습 단계 진행 바">
+    <div class="stepper-inner" id="stepper-inner"></div>
+  </nav>
+
+  <!-- 단일 집중 스테이지 (화면당 1~2개 정보와 1개 조작만 배치) -->
+  <main class="stage-wrap">
+    <div id="stage-container"></div>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
